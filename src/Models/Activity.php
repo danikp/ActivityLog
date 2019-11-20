@@ -158,7 +158,7 @@ class Activity extends Eloquent {
 		$dataFormatted = [];
 		foreach ($data as $key => $value)
 		{
-			$dataFormatted[Str::snake_case($key)] = $value;
+			$dataFormatted[Str::snake($key)] = $value;
 		}
 
 		// merge defaults array with formatted data array
