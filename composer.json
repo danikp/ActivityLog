@@ -1,5 +1,5 @@
 {
-	"name": "regulus/activity-log",
+	"name": "danikp/activity-log",
 	"description": "A clean and simple Laravel 5 activity logger for monitoring user activity on a website or web application.",
 	"license": "MIT",
 	"authors": [
@@ -8,6 +8,16 @@
 			"email": "me@codyjassman.com"
 		}
 	],
+    "repositories": {
+        "0": {
+            "type": "vcs",
+            "url": "git@github.com:danikp/TetraText.git"
+        },
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.org"
+        }
+    },
 	"require": {
 		"php": ">=5.4.0",
 		"laravel/framework": ">=5.2.0",
