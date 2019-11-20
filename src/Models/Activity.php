@@ -1,4 +1,6 @@
-<?php namespace Regulus\ActivityLog\Models;
+<?php
+
+namespace Regulus\ActivityLog\Models;
 
 /*----------------------------------------------------------------------------------------------------------
 	Activity Log
@@ -9,7 +11,7 @@
 		version 0.6.8
 		last updated on April 17, 2017
 ----------------------------------------------------------------------------------------------------------*/
-
+use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
 use Illuminate\Support\Facades\Auth;
@@ -156,7 +158,7 @@ class Activity extends Eloquent {
 		$dataFormatted = [];
 		foreach ($data as $key => $value)
 		{
-			$dataFormatted[snake_case($key)] = $value;
+			$dataFormatted[Str::snake_case($key)] = $value;
 		}
 
 		// merge defaults array with formatted data array
